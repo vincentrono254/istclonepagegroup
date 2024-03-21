@@ -1,0 +1,43 @@
+
+.header{
+width:100%;
+height:auto;
+margin:50px;
+padding: 20px;
+flex-wrap: wrap;
+}
+.righthead{
+float: right;
+width:20%;
+margin-top: 70px;
+}
+.lefthead{
+float:left;
+width:80%;
+}
+.card{
+padding:50px;
+height: 400px;
+box-shadow: 0px 4px 8px rgba(0,0,0,.2);
+}
+.cardd{
+box-shadow: 0px 4px 8px rgba(0,0,0,.2);
+padding:50px;
+height:400px;
+}
+.btmside{
+width: 100%;
+border-radius: 15%;
+text-align: center;
+background-color: #7b88a8;
+height: 20rem;
+padding:5rem;
+}
+.btms{
+    width: 100%;
+
+text-align: center;
+margin-bottom: 10rem;
+height: 20rem;
+padding:5rem;
+}
