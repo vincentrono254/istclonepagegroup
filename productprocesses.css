@@ -1,0 +1,56 @@
+.header{
+    width:100%;
+    height:auto;
+    margin:50px;
+    padding: 20px;
+    flex-wrap: wrap;
+    }
+    .righthead{
+    float: right;
+    width:20%;
+    margin-top: 70px;
+    }
+    .lefthead{
+    float:left;
+    width:80%;
+    }
+    .container-l{
+        width:100%;
+        
+    }
+    .rff{
+        float:right;
+        width:50%;
+        height: 310px;
+        background-color: aqua;
+        padding:10px;
+        border-radius: 6px;
+        
+        
+    }
+    .lff{
+        float:left;
+        width:50%
+    }
+    .card{
+        padding:10px;
+    }
+    .btmside{
+        width: 100%;
+        border-radius: 15%;
+        text-align: center;
+        background-color: #7b88a8;
+        height: 20rem;
+        padding:5rem;
+        }
+        .btms{
+            width: 100%;
+        
+        text-align: center;
+        }
+        .med{
+            
+            margin-left: 5px;
+             font-size: 18pt;
+
+        }

@@ -4,8 +4,333 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ist clone group</title>
+    <link rel="stylesheet" href="productprocesses.css">
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- inline styling -->
+  <style>
+    /* Custom styles for the navbar */
+    .navbar-custom {
+        background-color: #fff; /* Navbar background color */
+        /* border-bottom: 2px solid #ccc; /// */
+      }
+      .navbar-custom .nav-link {
+        color: #333; /* Link color */
+      }
+      .navbar-custom .nav-link.home {
+        color: red; /* Home link color */
+      }
+      .nav-link:hover{
+          color: red;
+      }
+      .dropdown-menu li a:hover{
+          color: red;
+      }
+
+      .section7{
+      background-color:#333333;
+      height: 60vh;
+      width: 100%;
+     }
+     .section7-1{
+      display: flex;
+      margin-left: 50px;
+      flex-wrap: wrap;
+      float:left;
+    }
+    .section7-2{
+      display: flex;
+      flex-direction: row;
+      color: #7A7A7A;
+      margin-left: 50px;
+      flex-wrap: wrap;
+      float:right
+    }
+    .section7-2 a{
+       text-decoration: none;
+       color: #7A7A7A;
+       
+    }
+    .sec1-7{
+          margin: 20px;
+    }
+    .vertical-rule {
+  border: 0.1px solid #7A7A7A; /* Change to border-right for right side */
+   /* Adjust margin as needed */
+    }
+   </style>
+
 </head>
 <body>
     
+  <!-- navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom  d-flex  justify-content-between"> 
+    <div class="container-fluid">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#"> 
+        <img src="logo.png" alt="Logo" height="150" width="250" class="mx-2">
+      </a>
+    </div>
+  <div class="mx-2">
+      <!-- Navbar toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNav"> 
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link home  ms-4" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  ms-4" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href="about.html">About STL</a></li>
+              <li><a class="dropdown-item" href="award.html">Awards</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  ms-4" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+              <li><a class="dropdown-item" href="products.html">Managing People</a></li>
+              <li><a class="dropdown-item" href="productprocesses.html">Managing Processes</a></li>
+              <li><a class="dropdown-item" href="#">Managing</a></li>
+              <li><a class="dropdown-item" href="#">Governance</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  ms-4"href="#">Contact</a>
+          </li>
+        </ul>
+  
+        <!-- Button -->
+        
+           <form class="d-flex"> 
+            <button class="btn btn-danger text-light rounded-0 p-2  ms-4" type="submit">RequestDemo</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+  <!--  Header Section Starts Here-->
+  <div class="header">
+    <div class="lefthead">
+    <h1 style="font-weight: 600;">Contract Lifecycle Management</h1>
+    <p>Are you effectively managing your human capital assets? Ever <br> think of having an all-round system where you can access your  <br>organization’s employee data, process payroll and manage <br>leaves? eHorizon HRMS is for you.</p>
+  </div>
+<div class="righthead">
+    <img src="Mkatabalogo.png" style="width: 180px; height: 100px;">
+
+  </div>
+  </div>
+<!-- section one cards -->
+  <p style="font-weight: 300; margin-left: 70px;">Importance of efficient contract lifecycle management for businesses;</p>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 200px;">
+      <h5 class="card-title">Risk Mitigation:</h5>
+      <div class="card-body">
+        Efficient CLM identifies and mitigates legal and regulatory risks, ensuring contract compliance and reducing the likelihood of disputes.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 200px;">
+      <h5 class="card-title">Cost savings:</h5>
+      <div class="card-body">
+        Streamlined contract processes through automation minimize resource expenditures, preventing costly errors and optimizing overall operational costs.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 200px;">
+      <h5 class="card-title">Enhanced Compliance:</h5>
+      <div class="card-body">
+        CLM provides a systematic approach to manage contract terms, aligning them with company policies and industry regulations to ensure ongoing compliance.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 200px;">
+      <h5 class="card-title">strategic Decision-Making</h5>
+      <div class="card-body">
+        Access to comprehensive contract data empowers informed decision-making, enabling businesses to negotiate better terms and enhance overall strategic planning.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 200px;">
+      <h5 class="card-title">Improved Efficiency</h5>
+      <div class="card-body">
+        Automated workflows and centralized repositories enhance efficiency by reducing manual tasks, fostering collaboration, and saving time for more strategic activities.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 200px;">
+      <h5 class="card-title">Customer Satisfaction</h5>
+      <div class="card-body">
+        Efficient CLM contributes to positive customer experiences by ensuring timely and accurate contract fulfillment, building trust and satisfaction with clients.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=" conainer-l text-center mt-4">
+    <div class="lff">
+        <iframe width="550" height="310" src="https://www.youtube.com/embed/E-uuOJ8alCw" title="eHorizon Mkataba - Bringing Simplicity to Contract Lifecycle Management" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="rff">
+        <h6>Contract Lifecycle Management in a Nutshell</h6>
+        <hr>
+        <p>It connects all the contracts and people involved in the contract creation process on one platform. Therefore transparency, accessibility, accountability and mitigation of risks are maintained and sustained.</p>
+        
+    </div>
+</div>
+<br><br><br>
+<!-- Contract lifecycle management -->
+<div class="med">Benefits of Contract Lifecycle Management</div>
+
+<div class="container">
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 380px;">
+      <h5 class="card-title">Increased Efficiency</h5>
+      <div class="card-body">
+       <ul>
+        <li>Streamlined Operations: By incorporating efficient processes, tasks can be completed in less time, reducing bottlenecks and enhancing overall workflow.</li>
+        <li>Resource Optimization: Efficient systems help in maximizing the use of available resources, ensuring that time, manpower, and other assets are utilized effectively.</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 380px;">
+      <h5 class="card-title">Improved Compliance</h5>
+      <div class="card-body">
+        <ul>
+          <li>Adherence to Regulations: Implementing systems that incorporate compliance measures ensures that the organization operates within the boundaries of relevant laws and regulations.</li>
+          <li>Risk Mitigation: Compliance tools help identify and address potential risks, safeguarding the organization against legal issues and reputational damage.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 380px;">
+      <h5 class="card-title">Enhanced Accuracy</h5>
+      <div class="card-body">
+       <ul>
+        <li>Error Reduction: Automated and well-designed processes minimize the chances of human errors, leading to more accurate and reliable outcomes.</li>
+        <li>Consistency: Standardized procedures contribute to consistent results, reducing variability and ensuring a higher level of precision in various operations.</li>
+
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 380px;">
+      <h5 class="card-title">Cost Savings</h5>
+      <div class="card-body">
+        <ul>
+          <li>Reduced Operational Costs: Increased efficiency and accuracy often lead to cost savings, as fewer resources are required to achieve the same or better results.</li>
+          <li>Avoidance of Penalties: Compliance measures can prevent costly legal repercussions and fines, contributing to financial stability.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 380px;">
+      <h5 class="card-title">Enhanced Decision-Making</h5>
+      <div class="card-body">
+        <ul>
+          <li>Access to Accurate Data: Reliable and precise information, facilitated by efficient processes, empowers decision-makers to make informed and strategic choices.</li>
+          <li>Timely Insights: Streamlined operations provide real-time data, enabling quicker decision-making and a more responsive approach to market changes.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="height: 380px;">
+      <h5 class="card-title">Customer Satisfaction</h5>
+      <div class="card-body">
+       <ul>
+        <li>Faster Service Delivery: Improved efficiency translates to quicker response times and faster delivery of products or services, positively impacting customer satisfaction.</li>
+        <li>Higher Quality Products/Services: Enhanced accuracy ensures that customers receive high-quality and error-free products or services.</li>
+       </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="btms">
+    <h1 style="margin:0">Our State of the Art Security</h1>
+    <p>Our systems have comprehensive security infrastructure based on managing a multitude of tactics, from preventing unauthorized access and virus control <br> <section style="text-align: center;"> legal protection and physical security.</section></p>
+    <button style="background-color: red;  color: white; border: 0; padding: 15px; margin-bottom: 5px;">More on Security</button>
+    </div>
+    
+    <div class="btmside">
+    <h1 style="font-size: 25px; text-align: center">Ready to enhance board productivity and decision-making?</h1>
+    <button style="background-color: red; align-items: center; border-radius: 20px; color: white; border: 0; padding: 10px; margin-top: 20px;">I am Ready</button>
+    </div>
+    
+    <!-- footer -->
+    <div class="section7">
+      <div class="section7-1">
+       <div class="sec1-7">
+        <img src="logostl-white.png" alt="image" style="width: 100%;">
+        <h6 style="color: white;">Download Our App</h6>
+        <button class="px-5 py-2" style="background-color: #222222; color: white;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">Playstore</button>
+        <button class="px-5 py-2" style="background-color: #222222; color: white;  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">AppStore</button>
+       </div>
+       <div class="vertical-rule"></div>
+        </div>
+      <div class="section7-2">
+        <div class="column1 me-5">
+          <div><h4>Products</h4></div>
+         <div><a href="#">eHorizon eBoard</a></div>
+         <div><a href="#">eHorizon eParliament</a></div>
+         <div><a href="#">eHorizon HRMS</a></div>
+         <div><a href="#">eHorizon Maktaba</a></div>
+        </div>
+        <!-- column2 -->
+        <div class="column1 me-5">
+          <div><h4>Company</h4></div>
+         <div><a href="#">Home</a></div>
+         <div><a href="#">About STL</a></div>
+         <div><a href="#">Contact Us</a></div>
+         <div><a href="#">Security</a></div>
+        </div>
+        <!-- section3 -->
+        <div class="column1 me-5">
+          <div><h4>Discover</h4></div>
+         <div><a href="#">Blog</a></div>
+         <div><a href="#">Partners</a></div>
+         <div><a href="#">CSR</a></div>
+         <div><a href="#">Career Opportunities</a></div>
+        </div>
+      </div>
+      <hr style="color: #7A7A7A;">
+      
+      </div>
+      <p style="color: #7A7A7A; text-align: center; background-color:#333333;">©1991-2024 Software Technologies Ltd. All Rights Reserved | Privacy Policy | Terms & Conditions</p>
+    
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
