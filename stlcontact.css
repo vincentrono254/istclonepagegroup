@@ -57,18 +57,16 @@ header{
   
 }
 .header-container1{
-  width:100%;
+  display: flex;
+  flex-direction: column;
   margin: 5px;
-  align-items: center;         
+  justify-content: space-between;
+  align-items: center;
 }
 .header-intro{
   text-align: center; 
   color:#005577;
-} 
-.header-section1{
-  float:left;
-  width:50%;
-}         
+}
 .header-section2{
   background-color: white;
   display: flex;
@@ -78,7 +76,6 @@ header{
   min-height:fit-content;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  width:50%;
 }
 .sp{
   color: red;
@@ -381,11 +378,15 @@ header{
 .header-container1{
   display: flex;
   margin: 5px;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .header-intro{
   text-align: center; 
   color:#005577;
+}
+.header-section1{
+  width: 400px;
+  height: 400px;
 }
 .header-section2{
   background-color: white;
@@ -463,23 +464,48 @@ header{
   border-radius: 30px;
   border: 0;
 }
-footer{
-  background-color: #3c3c3c;
-  height: auto;
-  color: white;
-  font-family: arial;
-}
-
-.classlogo{
-  width: 200px;
-  height: 180px;
-  margin-left: 40px;
-  
-}
-.maincontainer{
+.section7{
+  background-color:#333333;
+ }
+ .section7-1{
   display: flex;
-  flex-direction: row;flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  margin-left: 50px;
+  flex-wrap: wrap;
 }
+.section7-2{
+  display: flex;
+  flex-direction: row;
+  color: #7A7A7A;
+  margin-left: 50px;
+  flex-wrap: wrap;
+}
+.section7-2 a{
+   text-decoration: none;
+   color: #7A7A7A;
+   
+}
+.sec1-7{
+      margin: 20px;
+}
+.vertical-rule {
+border: 0.1px solid #7A7A7A; /* Change to border-right for right side */
+/* Adjust margin as needed */
+}
+/* bootstrap nav bar */
+ } /* Custom styles for the navbar */
+ .navbar-custom {
+   background-color: #fff; /* Navbar background color */
+   /* border-bottom: 2px solid #ccc; /// */
+ }
+ .navbar-custom .nav-link {
+   color: #333; /* Link color */
+ }
+ .navbar-custom .nav-link.home {
+   color: red; /* Home link color */
+ }
+ .nav-link:hover{
+     color: red;
+ }
+ .dropdown-menu li a:hover{
+     color: red;
  }
