@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STL horizon</title>
+    <style>
+        *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+width: 100%;
+background: radial-gradient(closest-side at 700px 280px, red, black);
+color: #fff;
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+#home{
+padding: 10px 5%;
+width: 100%;
+height: 100vh;
+background-color: black;
+}
+ul{
+list-style: none;
+
+}
+ul li{
+display: inline-block;
+position: relative;
+}
+ul li a{
+display: block;
+padding: 15px 20px;
+color: #fff;
+text-decoration: none;
+text-align: center;
+}
+ul li ul.dropdown li a{
+color: black;
+}
+ul li ul.dropdown li{
+display: block;
+
+
+}
+ul li ul.dropdown{
+width: 100%;
+position: absolute;
+display: none;
+}
+ul li:hover ul.dropdown{
+display: block;
+background-color: #fff;
+width: 250px;
+border-radius: 10px;
+}
+.logo{
+width: 200px;
+}
+.demmo{
+background-color: red;
+color: #fff;
+padding: 12px 18px;
+border: none;
+border-radius: 5px;
+font-family: sans-serif;
+}
+.demmo:hover{
+    width: 100%;
+}
+.the-image img{
+width: 430px;
+margin-top: 10%;
+}
+.home-content{
+display: flex;
+justify-content: space-between;
+}
+.home-texts{
+flex-basis: 60%;
+}
+.home-content p{
+line-height: 30px;
+letter-spacing: 1px;
+font-size: 18px;
+font-family: sans-serif;
+font-weight: 300;
+margin-bottom: 40px;
+}
+.home-content h1{
+font-size: 60px;
+margin-bottom: 40px;
+}
+.home-content span{
+color: red;
+}
+.home-content button{
+background-color: white;
+color: red;
+padding: 14px 20px;
+border: none;
+border-radius: 5px;
+font-family: sans-serif;
+font-size: 18px;
+}
+/*-------ABOUT SECTION --------*/
+#about{
+padding: 10px 5%;
+}
+.about-content{
+display: grid;
+grid-template-columns: 1fr 1fr;
+column-gap: 30px;
+row-gap: 20px;
+margin-top: 6%;
+}
+.text{
+background-color: #DAE6E9;
+padding: 65px 25px;
+border-radius: 10px;
+}
+
+.main-text{
+font-size: 15px;
+margin-top: 20px;
+letter-spacing: 1px;
+line-height: 30px;
+font-family: sans-serif;
+}
+.text h2{
+margin-top: 20px;
+margin-bottom: 30px;
+}
+
+.text button{
+margin-top: 20px;
+background-color: red;
+border: none;
+padding: 12px 23px;
+color: white;
+border-radius: 5px;
+}
+
+.header2-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.header2-content h1{
+padding-left: 0px;
+font-size: 46px;
+margin-bottom: 30px;
+color: #2d3958;
+}
+.header2-content p{
+width: 650px;
+color: #7b88a8;
+font-size: 19px;
+line-height: 30px;
+letter-spacing: 1px;
+font-family: sans-serif;
+font-weight: 200;
+}
+hr{
+color: black;
+border: solid 0.6px;
+}
+/*-----------PRODUCT SECTION______*/
+
+
+#product{
+padding: 10px 8%;
+width: 100%;
+height: 100vh;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.product-images img{
+width: 100%;
+}
+.product-images{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+column-gap: 25px;
+}
+.product-images div{
+position: relative;
+padding-top: 60px;
+width: 240px;
+height: 400px;
+padding-left: 20px;
+padding-right:20px;
+box-shadow: 0 6px 10px rgba(0,0,0,.5);
+}
+.btnn{
+font-size: 17px;
+position: absolute;
+bottom: 15px;
+left: 50%;
+transform: translate(-50%);
+width: 130px;
+background-color: red;
+color: white;
+border: none;
+padding: 8px;
+}
+i{
+background-color: #fff;
+}
+#product h1{
+margin-top: 8%;
+color: #2d3958;
+margin-bottom: 20px;
+font-size: 40px;
+font-weight: 900;
+}
+.try{
+white-space: nowrap;
+top: 20px;
+left: 50%;
+transform: translate(-50%);
+position: absolute;
+color: #2d3958;
+}
+
+.down-side{
+width: 100%;
+height: 50vh;
+background-color: #DAE6E9;
+border-radius: 60px 60px 0 0;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+}
+.down-side h1{
+color: #2d3958;
+}
+.down-side button{
+margin-top: 4%;
+width: 140px;
+height: 50px;
+background-color: red;
+color: #fff;
+border: none;
+font-size: 18px;
+letter-spacing: 1px;
+border-radius: 50px;
+padding: 5px;
+}
+/*--------request demo section------*/
+#request{
+padding: 10px 5%;
+width: 100%;
+height: 70vh;
+background-color: #353535;
+display: flex;
+justify-content: space-between;
+color: #fff;
+}
+.left-side p{
+margin-top: 10px;
+margin-bottom: 20px;
+font-family: sans-serif;
+letter-spacing: 1px;
+}
+.left-side button{
+background-color: #353535;
+width: 160px;
+height: 55px;
+border: none;
+font-size: 16px;
+box-shadow: 4px 4px rgba(0,0,0,.3), -4px -4px rgba(0,0,0,.3);
+color: rgb(186, 186, 186);
+border-radius: 8px;
+margin: 10px;
+
+}
+.right-side{
+display: flex;
+font-size: 15px;
+margin-top: 5%;
+}
+.right-side div{
+margin: 35px;
+}
+.right-side h4{
+margin-bottom: 20%;
+}
+.right-side p{
+line-height: 34px;
+color: rgb(143, 140, 140);
+}
+.horizontal-line{
+width: 1px;
+background-color: darkgray;
+height: 60vh;
+margin-top: 30px;
+}
+.foot{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 5%;
+width: 100%;
+background-color: #353535;
+color: white;
+height: 200px;
+}
+.icons i{
+margin: 10px;
+color: black;
+padding: 5px;
+}
+hr{
+border: 0.01px solid;
+color: rgb(75, 75, 75);
+}
+
+/* small screens */
+@media (min-width: 390px) {
+
+    
+}
+    </style>
+</head>
+<body>
+    <!--------home section -->
+<div id="home">
+    <div class="container">
+    <div class="header">
+    <nav>
+    <img class="logo" src="istlogo.png" alt="">
+    <ul>
+    <li><a style="color: red;" href="#">Home</a></li>
+    <li><a href="#">About Us</a></li>
+    <li>
+    <a href="#">Our products</a>
+    <ul class="dropdown">
+    <li><a href="#">Managing people</a></li>
+    <li><a href="#">Managing resources</a></li>
+    <li><a href="#">Managing </a></li>
+    <li><a href="#">Governance</a></li>
+    </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+    <li><a class="demmo" href="#">Request Demo</a></li>
+    </ul>
+    </nav>
+    
+    <div class="home-content">
+    <div class="home-texts">
+    <h1>Growing with <span>Clients</span></h1>
+    <p>We work in a data-centric world. What if we could help you translate your organization’s data into valuable insights that could help you manage people, processes and governance better?</p>
+    <button>Learn More</button>
+    </div>
+    <div class="the-image">
+    <img src="Happy-Person.png" alt="">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div id="about">
+    <div class="header2-content">
+    <h1>Delivering Client Value Since 1991</h1>
+    <p>Since 1991, we’ve excelled in our field by leveraging technology, embracing change, and fostering innovation to deliver value to our clients.</p>
+    </div>
+    
+    <div class="about-content">
+    <div class="text">
+    <p>eHorizon – HRMS (Human Resource Management System)</p>
+    <h2>Human Resource and Payroll</h2>
+    <hr>
+    <p class="main-text">Manage your employee’s lifecycle, effectively. No matter the size, industry or location of your organization, we can help manage your employee’s life cycle on cloud with our intuitive software solution.
+    </p>
+    <button>Learn More</button>
+    </div>
+    <div class="image-content">
+    <img src="stl1.png" alt="">
+    </div>
+    <div class="image-content">
+    <img src="stl2.png" alt="">
+    </div>
+
+    <div class="text">
+    <p>eHorizon – Mkataba</p>
+    <h2>Contract Lifecycle Management</h2>
+    <hr>
+    <p class="main-text">Managing your contracts’ Lifecycle With our cohesive contract-management software, we simplify the complex day-to-day process of contracts; saving you cost and time.
+    </p>
+    <button>Learn More</button>
+    </div>
+
+    <div class="text">
+    <p>eHorizon – eBoard</p>
+    <h2>For Governance</h2>
+    <hr>
+    <p class="main-text">Making right & quicker decisions. With eHorizon eBoard, you can run your board and get more done from anywhere.
+    </p>
+    <button>Learn More</button>
+    </div>
+    <div class="image-content">
+    <img src="stl3.jpg" alt="">
+    </div>
+    <div class="image-content">
+    <img src="stl4.jpg" alt="">
+    </div>
+
+    <div class="text">
+    <p>eHorizon – eParliament</p>
+    <h2>For Governance</h2>
+    <hr>
+    <p class="main-text">Access rich, contextual information anytime, anywhere, on any device. Simplify legislative document management for members, assistants, and administration with our user-friendly interface.
+    </p>
+    <button>Learn More</button>
+    </div>
+
+    </div>
+    </div>
+    <!---------product section------->
+    <div id="product">
+    <h1>Download Our Brochures</h1>
+    <div class="product-images">
+    <div>
+    <h4 class="try">Board Management System</h4>
+    <img src="stlimg1.png" alt="">
+    <button class="btnn">Download</button>
+    </div>
+    <div>
+    <h4 class="try">eParliament</h4>
+    <img src="stlimg2.jpg" alt="">
+    <button class="btnn">Download</button>
+    </div>
+    <div>
+    <h4 class="try">Contract Lifecycle Management</h4>
+    <img src="stlimg3.png" alt="">
+    <button class="btnn">Download</button>
+    </div>
+    <div>
+    <h4 class="try">Human Resource and Payroll</h4>
+    <img src="stlimg4.png" alt="">
+    <button class="btnn">Download</button>
+    </div>
+    </div>
+    </div>
+    <div class="down-side">
+    <h1>Ready to enhance board productivity and decision-making?<br> Request a demo <span style="color: red;">today</span></h1>
+    <button>I Am Ready</button>
+    </div>
+    
+    <div id="request">
+    <div class="left-side">
+    <img class="" src="istlogo.png" alt="">
+    <p>Download Our Apps</p>
+    <button>App Store</button>
+    <button>App Play</button>
+    </div>
+    <div class="horizontal-line">
+    
+    </div>
+    <div class="right-side">
+    <div>
+    <h4>Products</h4>
+    <p>eHorizon eBoard</p>
+    <p>eHorizon eParliament</p>
+    <p>eHorizon HRMS</p>
+    <p>eHorizon Mkataba</p>
+    </div>
+    
+    <div>
+    <h4>Company</h4>
+    <p>Home</p>
+    <p>About STL</p>
+    <p>Contact Us</p>
+    <p>Security</p>
+    </div>
+    
+    <div>
+    <h4>Discover</h4>
+    <p>Blog</p>
+    <p>Partners</p>
+    <p>CRS</p>
+    <p>Career Opportunities</p>
+    </div>
+    </div>
+    </div>
+    <hr>
+    <div class="foot">
+    <div class="copy-write">
+    <p>©1991-2024 Software Technologies Ltd. All Rights Reserved | Privacy Policy | Terms & Conditions</p>
+    </div>
+    
+    <div class="icons">
+    <i class="fa-brands fa-linkedin"></i>
+    <i class='bx bxl-twitter'></i>
+    <i class='bx bxl-facebook-circle'></i>
+    </div>
+    </div>
+    
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</body>
+</html>
